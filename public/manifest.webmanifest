@@ -1,0 +1,25 @@
+{
+  "name": "The Hunters A.D. 1492 — Companion",
+  "short_name": "The Hunters",
+  "description": "Fan companion: searchable rules glossary, combat & bestiary reference, and an atmospheric music player.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0b0908",
+  "theme_color": "#0b0908",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

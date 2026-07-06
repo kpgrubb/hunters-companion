@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+/* ---- The Hunters A.D. 1492 — gothic / medieval-horror theme ---- */
+@theme {
+  --font-display: 'Cinzel', 'Trajan Pro', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
+
+  --color-ink: #0b0908;
+  --color-parchment: #e8dcc0;
+  --color-parchment-dim: #c9bb98;
+  --color-blood: #8e1b1b;
+  --color-blood-bright: #c02626;
+  --color-iron: #3a3a3f;
+  --color-iron-light: #5a5a62;
+  --color-gold: #b7902e;
+  --color-gold-bright: #e0b64a;
+  --color-moss: #4a5a3a;
+
+  --color-panel: #17130f;
+  --color-panel-raised: #211a14;
+  --color-border-rune: #3a2e20;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-ink);
+  background-image:
+    radial-gradient(ellipse at top, rgba(60, 40, 20, 0.18), transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(30, 10, 10, 0.25), transparent 55%);
+  color: var(--color-parchment);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+/* Thin gothic scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0a08;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a2e20;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #574535;
+}
+
+/* Subtle engraved-card texture */
+.rune-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 40%),
+    var(--color-panel-raised);
+  border: 1px solid var(--color-border-rune);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.text-shadow-deep {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  45% { opacity: 0.86; }
+  55% { opacity: 0.95; }
+}
+.flicker {
+  animation: flicker 4s ease-in-out infinite;
+}

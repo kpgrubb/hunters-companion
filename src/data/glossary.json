@@ -1,0 +1,626 @@
+{
+  "meta": {
+    "source": "The Hunters A.D. 1492 - Rules Compendium (EN)",
+    "termCount": 103
+  },
+  "terms": [
+    {
+      "id": "changing-number-of-players",
+      "term": "Changing Number of Players During Campaign",
+      "category": "general",
+      "definition": "When playing a campaign, you may encounter a situation when one of the players resigns from the game. In that case one of the remaining players takes control of that hero. The second solution is to completely remove the hero from the game -- the remaining heroes may share among themselves any equipment, resources and gold belonging to such a hero. However, this may affect the game balance negatively, making the campaign more difficult.\n\nOn the other hand, one of your friends may wish to join a campaign in progress. In this situation the new hero immediately gains experience equal to the least advanced hero participating in the campaign (add all upgrades acquired earlier and unspent points a given hero has). They do not receive any additional equipment except their starting equipment, though a welcoming party will surely share some of their hard won spoils."
+    },
+    {
+      "id": "difficulty-level",
+      "term": "Difficulty Level",
+      "category": "general",
+      "definition": "If you like challenges, or after playing a few quests you feel that the game seems too easy, you may increase its difficulty level by introducing a few changes to the gameplay:\n\nLevel 2 - professional: Each encountered enemy increases all of its defense types by 1.\n\nLevel 3 - master: Each encountered enemy increases its Strength, Agility and Knowledge by 1.\n\nHero elimination: In this variant, a hero that would fall unconscious according to normal rules is killed instead. The remaining heroes may continue the campaign with fewer heroes or return to the last game save they have. The Hero Elimination variant may be used on the normal, professional or master difficulty level."
+    },
+    {
+      "id": "accessories",
+      "term": "Accessories",
+      "category": "equipment",
+      "definition": "Accessories are one of the equipment types. Usually they represent rings, necklaces, amulets, cloaks and similar apparel elements, which are not armor. Each accessory token takes 1 slot on a hero board. Each hero has 1 or 2 slots on their board to place accessories. No action or reaction is required to use accessories. A given hero can have as many accessories as they have matching slots. Optionally, additional accessories can be placed on backpack slots. Some infusions may negatively affect a given hero's Health; if a token features suffering x at the end of the infusion effect duration (usually at the end of the current quest), a given hero suffers x once."
+    },
+    {
+      "id": "action-card",
+      "term": "Action Card",
+      "category": "actions",
+      "definition": "Action cards are used to perform actions and reactions during quests. Each hero has their own set of 45 action cards with a unique illustration on the back. Each deck is divided into two parts: starting action cards marked \"ST\" in the lower-right corner (20 cards) and advanced action cards with their point value instead of the \"ST\" icon (25 cards). In order to perform an action or a reaction, the acting hero chooses one action card from their hand and resolves the activities described on it. A given card may allow the hero to perform one or a few activities as part of one action -- you cannot change the order of activities listed on the card you use, but you can skip any activity from those listed on the card. In order to expand their basic 20-card deck using advanced action cards, heroes will spend experience during the campaign.\n\nEach action card is divided into two parts: the upper half features its available action (sometimes comprised of many activities), and the lower half features its reaction."
+    },
+    {
+      "id": "action",
+      "term": "Action",
+      "category": "actions",
+      "definition": "Action comprises the most important part of hero and enemy turns when resolving quests. Each hero performs 2 actions on their turn and each enemy performs 1 action on its turn. The acting hero has 2 options when performing an action: they may choose any action card from their hand, or they may perform any basic action. The acting hero may choose not to resolve any actions on their turn. The acting enemy resolves its actions using its enemy action card. Whenever rules mention an \"action\", you should read it as \"action or activity\"."
+    },
+    {
+      "id": "free-action",
+      "term": "Free Action",
+      "category": "actions",
+      "definition": "Some cards feature the expression \"Free action\". It marks an action which is not counted against the 2 actions normally performed by a given hero in their turn."
+    },
+    {
+      "id": "action-cards-deck",
+      "term": "Action Cards Deck",
+      "category": "actions",
+      "definition": "Before starting a quest, but after reading its description, heroes prepare their action card decks. An action deck is always comprised of 20 cards. During the first few quests these are simply starting action cards marked with \"ST\" in their lower-right corner. As heroes progress, they may buy new action cards using their gained experience, so their pool of available action cards can be much larger than 20 cards. In this situation, each player must choose exactly 20 cards from their available pool before each quest to build their action card deck. At the beginning of a quest, each hero chooses 5 action cards for their starting hand. The rest should be shuffled and placed as an action card pile. If an action card pile is depleted during a quest, all used action cards should be reshuffled and formed into a new action card pile."
+    },
+    {
+      "id": "activity",
+      "term": "Activity",
+      "category": "actions",
+      "definition": "Many action cards (both enemy and hero) enable them to perform a few activities as part of one action. Each activity is always described in detail on a given action card. You cannot change the order of activities listed on an action card, but any of those activities can be skipped. Whenever rules mention an \"action\", you should read it as \"action or activity\"."
+    },
+    {
+      "id": "addition",
+      "term": "Addition",
+      "category": "equipment",
+      "definition": "An addition is one of the equipment types. It is used to enhance a weapon. Additions are divided into 3 categories: Melee weapon additions (with single semi-round notches), Ranged weapon additions (with single or double triangular notches), and Runes (with double semi-round notches).\n\nEach addition token takes 1 slot on a hero board. Each hero has from 2 to 4 slots on their board to place additions. In order to place an addition in its matching slot, a proper weapon token with a protrusion matching its notches must be placed next to it. No action or reaction is required to use additions.\n\nRunes are the only additions which cannot be freely removed from weapons. Once a rune is forged on a weapon, it stays on it until the end of the game.\n\nIf a single-use addition supports an action comprised of more than one Attack activity, it works only during one of these activities. If a given weapon can be used to perform 2 types of attacks (e.g. a Melee Attack and Ranged Attack), any addition attached to such weapon only affects the basic attack type."
+    },
+    {
+      "id": "ally",
+      "term": "Ally",
+      "category": "general",
+      "definition": "The term \"Ally\" can have 2 meanings. In case of descriptions of enemy activities or capabilities (special abilities, quest descriptions or enemy action cards) it indicates each other enemy. In case of descriptions of hero activities or capabilities (hero action cards, quest descriptions or equipment) it indicates each other hero or Non-Player Character (NPC) allied with the heroes (e.g. an Innkeeper).\n\nA heroes' ally is always described in detail in the quest in which it appears. Usually they have their own set of available actions and unique attributes. If a given ally can only perform particular action types (e.g. Move), heroes cannot force them in any way to perform action types which they normally could not perform. An ally's actions can be enhanced with reactions by any heroes as normal, as if a given ally was just another hero."
+    },
+    {
+      "id": "area",
+      "term": "Area",
+      "category": "traits",
+      "definition": "Area is one of the traits (p. 21). It targets all miniatures (including friendly ones) on a chosen space. Resolve the attack separately for each target in that space. Any reaction card used with this attack affects each targeted miniature. At the beginning of their turn, a hero may choose to ignore this trait if it does not benefit them. If a hero targeted by such an attack has a piece of equipment or plays a reaction enabling them to modify any characteristic of an area attack and its description does not say otherwise, a given modifier only pertains to this hero. Attacks against other heroes on the same space are resolved normally."
+    },
+    {
+      "id": "armor",
+      "term": "Armor",
+      "category": "equipment",
+      "definition": "Armor is one of the equipment types which increases a hero's defense against enemy attacks during quests. Each armor token takes 2 slots on a hero board. Each hero has 2 slots on their board to place an armor. Some armors negatively affect a hero's attributes. If a given token features any negative Agility modifier, it pertains both to quests and to tests made between quests. If an armor modifies Knowledge, the change only affects Magic Attacks performed by a hero (it does not affect, e.g. Knowledge tests between quests). If an armor modifies Move, it pertains to Move performed during quests. All modifiers as well as other equipment traits are not active if an armor is carried in the backpack.\n\nIf a hero's armor is damaged during the game as a result of enemy attacks or other unexpected events, you may repair it in your wagon between quests. The repair cost is 1 per each damaged armor piece; the damage extent does not matter."
+    },
+    {
+      "id": "attributes",
+      "term": "Attributes",
+      "category": "general",
+      "definition": "Heroes and their allies, as well as enemies, have a few attributes describing their strong and weak points: Strength, Agility, Perception, Knowledge and their maximum Health level. Each attribute has a value from 0 to 4 (Health from 0 to 5) which is indicated on a hero board. The higher the attribute, the better a given hero is at its corresponding field of expertise. Depending on their attack types, enemies may have only some attributes; these are described on enemy cards. No attribute can ever fall below 0. If such a thing would happen, ignore the effect resulting in it."
+    },
+    {
+      "id": "backpack",
+      "term": "Backpack",
+      "category": "equipment",
+      "definition": "The backpack category comprises all equipment elements which are not a weapon, armor, shield, helmet or apparel. Usually these are items such as medicines, potions or traps. Each token takes 1 slot on a hero board. Each hero has from 2 to 4 slots on their board to place equipment from the backpack category.\n\nSome equipment elements, especially infusions, may negatively affect a given hero's Health. Once a hero imbibes such an infusion, they are affected by a long-lasting weakness, represented in the game by lowering a given hero's current Health level after the end of the quest during which such infusion was used.\n\nNo action or reaction is required to use equipment, with the exception of traps and grenades. Additionally, you can place any other kind of equipment elements on the slots for equipment (e.g. weapons or armor)."
+    },
+    {
+      "id": "basic-action",
+      "term": "Basic Action",
+      "category": "actions",
+      "definition": "Instead of using an action card, the acting hero may choose any of the following 4 basic actions: \"Move 1\", \"Melee attack 1\", \"Ranged attack 1\" or \"Interact\". The acting hero choosing to perform a basic action chooses any 1 action card from their hand and discards it (they do not perform any actions featured on the discarded card)."
+    },
+    {
+      "id": "bottleneck",
+      "term": "Bottleneck",
+      "category": "terrain",
+      "definition": "This is one of the terrain features appearing during quests. If a hero on a space with a bottleneck uses a 3-slot weapon to attack, they suffer a -2 to hit modifier."
+    },
+    {
+      "id": "burn",
+      "term": "Burn",
+      "category": "traits",
+      "definition": "Burn is one of the traits (p. 21). When resolving a burn attack, its target's defense is halved (rounding down)."
+    },
+    {
+      "id": "collect",
+      "term": "Collect",
+      "category": "actions",
+      "definition": "Using this Interact action, the acting hero may collect all equipment, resources and/or findings on the same space."
+    },
+    {
+      "id": "constructing-equipment",
+      "term": "Constructing Equipment",
+      "category": "equipment",
+      "definition": "It is possible to construct new equipment if heroes have proper resources and proper Wagon upgrades. The list of equipment and items which you can make can be found on a separate card named \"Equipment Diagrams\". Next to each equipment name there is information about the cost of constructing 1 piece and all required Wagon upgrades. The newly constructed equipment can be immediately placed on a chosen hero board (or on the Wagon) after its construction. You cannot construct a given item or equipment if no tokens representing it are currently available; it is only possible once some of the used tokens (copies) are returned to the pool."
+    },
+    {
+      "id": "cover",
+      "term": "Cover",
+      "category": "terrain",
+      "definition": "One of the terrain features appearing during quests is cover. When a miniature attempts to hit an opponent on a space with the cover icon while performing a Ranged Attack or Ranged Magic Attack, it suffers a -1 To Hit modifier (modifiers are cumulative)."
+    },
+    {
+      "id": "defense",
+      "term": "Defense",
+      "category": "combat",
+      "definition": "Defense is used in all attack types. It enables the target to lower its enemy's attack strength. Defense is ignored when a miniature suffers damage as part of a card, ability or equipment effect not connected with any attack. In order to calculate the total defense, you must check the performed attack type. Depending on a given attack, there are 3 defense types: defense against melee attacks, defense against ranged attacks and defense against magic attacks. Once the appropriate defense type is chosen, you should check its value. The basic defense value of any hero is 0. In order to increase it, a given hero must add all \"+X defense\" modifiers, usually featured on armor, helmet, accessories or reaction cards. Once you add all those modifiers, you obtain a given hero's total defense. If any equipment element or reaction features \"x2\" instead of a standard value \"+X\", it means that once the whole defense is added it should be doubled. If any equipment element or reaction features the text x / x / x it means that all 3 defense types should be increased.\n\nEnemy defense is much easier to calculate. This is always one characteristic featured on the bottom of an enemy card. It may be further modified by enemy special abilities or hero reactions."
+    },
+    {
+      "id": "defense-tokens",
+      "term": "Defense Tokens",
+      "category": "combat",
+      "definition": "Both enemies and heroes may use defense tokens during quests. When a miniature acquires such a token, it is placed next to the miniature. A hero may decide to use a defense token when counting their defense. Each used token increases defense by 1 (only 2 tokens may be used at once to enhance this effect). The token should be discarded after resolving the attack. The tokens work in a similar way for enemies, but they use all their tokens during the next attack when counting defense (as long as it brings them benefits, e.g. an enemy will not use a defense token if the attack they are targeted with deals no damage).\n\nNo miniature can have more than 2 defense tokens at the same time (tokens are double-sided, so this could be 2 tokens with a value of \"1\" or 1 token with a value of \"2\")."
+    },
+    {
+      "id": "difficult-terrain",
+      "term": "Difficult Terrain",
+      "category": "terrain",
+      "definition": "This is one of the terrain features appearing during quests. There are 3 difficult terrain types:\n\nRough: When a miniature enters a space through an edge marked with the rough terrain icon, its movement must immediately end. The icon is counted from the space into which the movement is performed, not from the space where the miniature starts its movement.\n\nWater: Movement rules are the same as for rough terrain. Additionally, a miniature's Perception and Agility are halved (rounding down).\n\nSwamp: Movement rules are the same as for rough terrain. Additionally, a miniature's Strength, Perception, Agility and Knowledge are halved (rounding down)."
+    },
+    {
+      "id": "effect-duration",
+      "term": "Effect Duration",
+      "category": "equipment",
+      "definition": "Some equipment elements trigger effects with a certain duration. There are 4 options:\n\nSingle-use: They can be used once, then the representing token is taken from a hero board and discarded.\n\nOnce per quest: A token marked this way can be used once during each quest. Once used, the equipment stays inactive until the end of the current quest.\n\nFor an entire quest: If a hero chooses to use this type of equipment, it stays active from its first use until the end of the current quest. Once the quest ends, its representing token is taken from a hero board and discarded.\n\nPermanent: Such effects are constantly active and are never used up."
+    },
+    {
+      "id": "enemy",
+      "term": "Enemy",
+      "category": "general",
+      "definition": "Enemies are miniatures which oppose heroes during a quest. Enemies are divided into types; they have their own enemy cards and enemy action cards. If any enemy starts a quest with any damage, it cannot increase its Health level above its starting value (e.g. using a heal or regenerate effect). If new enemies are supposed to be deployed at the beginning of a new round during an ongoing quest, such enemies can perform their actions in the same round according to normal rules."
+    },
+    {
+      "id": "enemy-action-card",
+      "term": "Enemy Action Card",
+      "category": "general",
+      "definition": "Each enemy has its own action card deck. Basic enemies use 3 cards, more advanced enemies use 4 or 5 cards and the most powerful ones use 10 cards. Even if a given enemy appears in 2 variants (e.g. a Crossbowman and a Veteran Crossbowman), both use the same enemy action card deck.\n\nWhenever an enemy starts their turn, it draws the top card from its action card pile. All enemies of the same species (e.g. all Wolves) draw one common action card for a given round. If a card allows an enemy to perform a few activities as part of one action, you cannot change the order of activities listed on the card, but any activity can be skipped if a given enemy cannot perform it. If a given distance lists descriptions of a few actions (just like with the Wolf and the distance \"1+\"), only the first action should be performed. If it is impossible, a given enemy performs the next action from the list for a given distance."
+    },
+    {
+      "id": "enemy-card",
+      "term": "Enemy Card",
+      "category": "general",
+      "definition": "Each enemy has its own card. Its card features a given enemy name, its type, numbers of action cards used, attributes, starting Health level, defense, special abilities and types of performed attacks. If a few identical enemies appear in a quest, e.g. a few Wolves, they all use 1 common enemy card."
+    },
+    {
+      "id": "enemy-special-abilities",
+      "term": "Enemy Special Abilities",
+      "category": "general",
+      "definition": "Some enemies have special abilities described on their enemy cards. These abilities introduce special rules during quests in which such enemies participate. Such abilities are constantly active unless their description says otherwise. If a special ability description says \"This ability is activated with an action card\", such ability stays inactive until an enemy action card is drawn and it mentions the ability's name. Such abilities usually refer to a single activity, such as summoning an ally or healing. For example, a Mercenary Captain / Leader activates a special ability \"Parry\" using the enemy action card A16."
+    },
+    {
+      "id": "enemy-turn",
+      "term": "Enemy Turn",
+      "category": "general",
+      "definition": "During every quest round, each enemy resolves their turn comprised of 1 action. The acting enemy's turn is fully resolved and once it ends, another miniature starts their turn."
+    },
+    {
+      "id": "enemy-types",
+      "term": "Enemy Types",
+      "category": "general",
+      "definition": "Enemies are divided into 4 types: Humanoids, Demonic, Monsters and Shapeshifters. When attacking an enemy in a normal way, it does not matter for a hero what type of enemy they are facing. However, there are some action cards and special equipment enabling you to use additional, special effects against certain types of enemies."
+    },
+    {
+      "id": "engagement",
+      "term": "Engagement",
+      "category": "combat",
+      "definition": "Any miniatures resolving quests may find themselves in a very unique situation, which we call engagement. Each miniature on the same space with their opponent is considered engaged. Engaged miniatures can only perform the following actions: Parting Leap, Melee Attack or Magic Attack (assuming that it enables them to perform an attack in range 0 -- such information is always featured on a given action card)."
+    },
+    {
+      "id": "equipment",
+      "term": "Equipment",
+      "category": "equipment",
+      "definition": "All equipment pieces are featured on tokens. New tokens can be bought in towns, from encountered travelers, or gained during quests. You can also produce them in your wagon. If you want to get rid of excess equipment, besides throwing it into a ditch, you may also sell its token in one of the visited towns.\n\nEquipment is divided into the following categories: Weapons (including melee, ranged and magic weapons), Shields, Additions (including melee weapon additions, ranged weapon additions and runes), Armor, Helmets, Accessories, and Backpack (including traps and grenades). Equipment is placed on a hero board on its designated slots (every equipment type has separate, matching slots). Weapons, shields, additions, armor, helmets and accessories can also be placed on backpack slots, but in such case they are only carried, cannot be used and any special traits or abilities they normally provide are ignored."
+    },
+    {
+      "id": "equipment-diagrams",
+      "term": "Equipment Diagrams",
+      "category": "equipment",
+      "definition": "Equipment diagrams can be found on a separate card. They inform players what cost they must pay during production and what wagon elements must be upgraded first."
+    },
+    {
+      "id": "finding",
+      "term": "Finding",
+      "category": "terrain",
+      "definition": "One of the temporary terrain features that appear during quests. At the beginning of a quest, a finding token is placed on each space with this icon. Heroes will have the opportunity to collect it."
+    },
+    {
+      "id": "flight",
+      "term": "Flight",
+      "category": "actions",
+      "definition": "This is a special type of the Move action. If a miniature performs the Flight action, they ignore all terrain features except for walls (and it cannot hide). Once a flying miniature's Move ends, it always lands and is treated just like any other miniature. If it lands on a space with a terrain feature, a given feature affects it normally (e.g. a vantage point would increase the range of Ranged Attacks and Magic Ranged Attacks by 1)."
+    },
+    {
+      "id": "golden-rule",
+      "term": "Golden Rule",
+      "category": "combat",
+      "definition": "When performing to hit rolls, you should always use the Golden Rule both during enemy and hero attacks. No matter the value, each \"1\" on the dice is always considered a success. On the other hand, each \"6\" result is always considered a miss."
+    },
+    {
+      "id": "grenades",
+      "term": "Grenades",
+      "category": "equipment",
+      "definition": "Grenades are a special kind of equipment. Grenades are carried in the same way as other backpack items. A hero must perform an attack action in order to use them. A grenade effect is usually an attack described with characteristics such as Strength / Agility / Knowledge, number of attack dice, to hit modifier and range. Grenades can also have traits (just like weapons).\n\nSome grenades do not have any characteristics used for attacks. They do not deal any damage, but cause other effects instead, such as Immobilize or Stun. If a grenade has no attack characteristics, its effective use does not require any roll or test. Once an action is performed, its matching effect is automatically applied to all targets described on a given token."
+    },
+    {
+      "id": "heal",
+      "term": "Heal",
+      "category": "actions",
+      "definition": "Some cards provide players with the opportunity to perform the action \"Heal x\". The acting hero can heal themselves or any ally on the same space by increasing the target's current Health by \"x\". Some cards also allow to heal targets at a longer range, or to heal themselves, or just an ally (always check a given action card description). No hero can be healed beyond their maximum Health level. You can heal an unconscious hero the same way. An unconscious hero who has been healed cannot resolve their turn in the current round."
+    },
+    {
+      "id": "health",
+      "term": "Health",
+      "category": "general",
+      "definition": "A hero's Health level is shown on a hero board. It indicates if a hero is wounded and how severely. The Health level can decrease or increase as a result of suffered damage or healing. If the Health level reaches 0, a given hero is considered unconscious.\n\nThe Health level is shown on two tracks. The first one indicates a hero's maximum Health level, while the second one the current Health level. The cube indicating the current Health level can never be placed above the maximum Health level. A hero's Health can never fall below 0. Heroes ignore all events during a quest which would lower their Health below 0.\n\nIf a hero's Health falls to 0 between quests and would be further lowered by \"x\" (e.g. effects of road or town cards, or a poison token owned by any hero), the party must immediately advance the days marker by \"x\" (heroes must spend more time taking care of their severely wounded companion).\n\nAn enemy's maximum Health level is always shown on its card. An enemy's Health is lowered by damage it suffers during a quest. When an enemy's Health level falls to 0, a given enemy is removed from the board."
+    },
+    {
+      "id": "health-level",
+      "term": "Health Level",
+      "category": "general",
+      "definition": "See: Health."
+    },
+    {
+      "id": "helmet",
+      "term": "Helmet",
+      "category": "equipment",
+      "definition": "A helmet is one of the equipment types. It increases a hero's defense against enemy attacks during a quest. Each helmet token takes 1 slot on a hero board. Each hero has 1 slot on their board to place a helmet. Some helmets negatively affect a hero's attributes. If a given token features any negative Perception modifier, it pertains both to quests and to tests made between quests. If a helmet modifies Knowledge, the change only affects Magic Attacks performed by a hero (it does not affect, e.g. Knowledge tests between quests). All modifiers as well as other equipment traits are not active if a helmet is carried in the backpack."
+    },
+    {
+      "id": "hero-development",
+      "term": "Hero Development",
+      "category": "general",
+      "definition": "There are no hero levels in the game. Heroes gain Experience Points instead and you may use them to develop the following character aspects: Attributes, Available action card pool, and Equipment slots.\n\nAttribute Development: Each hero board features a track matching each attribute. Each space of a given track shows the number of experience required to increase a given attribute by 1. Once spent, the matching cube is advanced right to the next space. Heroes differ from each other both in their maximum attribute levels and their increase costs. As the maximum Health level increases (by a value of \"x\"), so does a hero's current Health level (by a value of \"x\"). When you pay for the increase of the maximum Health level, you advance 2 cubes by the same number of spaces -- the one on the maximum Health level track and the one marking the current Health level. A hero's current Health can never be higher than their maximum Health characteristic.\n\nAvailable Action Pool: Heroes may buy new action cards to expand their decks. When you choose to buy a new card, you add it to the basic deck of 20 cards. The cost of each new card is shown in its lower-right corner (starting cards feature \"ST\" instead of a cost).\n\nEquipment Slots: Heroes may also expand the number of equipment slots for all kinds of items. Tokens covering unavailable slots come in two types. Some have a printed cost required to make a given slot available; once paid, the hero discards the covering token. The second token type has no cost, meaning such a slot will never be available to the hero."
+    },
+    {
+      "id": "hero-turn",
+      "term": "Hero Turn",
+      "category": "general",
+      "definition": "During each quest round, each hero resolves their turn comprised of up to 2 actions. Once the acting hero's turn is fully resolved, another miniature starts their turn."
+    },
+    {
+      "id": "hide",
+      "term": "Hide",
+      "category": "actions",
+      "definition": "While a hero is Hidden, they cannot be targeted by enemy movement or attacks. The acting hero can only perform this action if 3 conditions are met: 1) The board space with the acting hero features the Hide icon. 2) The acting hero cannot be the only opponent within LOS of any enemy. 3) The hero cannot be on the same space or on any adjacent space with an enemy.\n\nA given hero may remain Hidden no matter the actions they perform until they attack an enemy. In that case, the moment the acting hero starts performing the attack, they immediately lose their Hidden status. The hero also stops being Hidden immediately upon entering a space without the Hide icon, or when they are on the same space with any enemy."
+    },
+    {
+      "id": "hiding-terrain",
+      "term": "Hiding Terrain",
+      "category": "terrain",
+      "definition": "This is one of the terrain features appearing during quests. The Hide action can only be performed on spaces marked with this icon."
+    },
+    {
+      "id": "immobilize",
+      "term": "Immobilize",
+      "category": "traits",
+      "definition": "Immobilize is one of the traits (p. 21). If a target is successfully dealt at least 1 damage with an immobilize attack, it cannot move in its next turn. The target's next turn can take place in the same or in the next round (depending on the order of hero and enemy turns). Place an immobilize marker next to the target and leave it until the end of their next turn. Immobilize can also result from playing an action card which is not an attack. In such a situation, dealing 1 damage is not required, and the immobilize effect is applied automatically."
+    },
+    {
+      "id": "interact",
+      "term": "Interact",
+      "category": "actions",
+      "definition": "The Interact action covers all activities listed below: Revive, Reload, Reorganize, Set Trap, and Collect. During some quests the Interact action is required to achieve special quest goals (e.g. opening a gate)."
+    },
+    {
+      "id": "light",
+      "term": "Light",
+      "category": "traits",
+      "definition": "Light is one of the traits (p. 21). It has no special effect but may provide bonuses in connection with certain action cards."
+    },
+    {
+      "id": "line-of-sight",
+      "term": "Line of Sight (LOS)",
+      "category": "combat",
+      "definition": "Line of Sight (LOS) is used during Ranged Attacks and ranged Magic Attacks. Such an attack can only be performed if its target is in LOS of the miniature performing the attack. In order to check this, an imaginary straight line should be established from the center of the space with the attacker to the center of the space with the target. If this line is uninterrupted by any wall, the attack can be performed. No other terrain features or miniatures block LOS."
+    },
+    {
+      "id": "location-card",
+      "term": "Location Card",
+      "category": "general",
+      "definition": "Location cards are comprised of towns or settlements where heroes may find new quests, buy or sell equipment, buy or sell resources they do not need and use local services. In order to move to a location card, the Hunters marker must be placed first on a proper map card with the name of the same town or settlement. As you enter a settlement, you can immediately place the Hunters marker on any location inside you like. Traveling between location cards is resolved differently from traveling between map cards: you do not have to advance the days marker. As long as you stay inside a settlement (and also when entering or leaving it), all your activities take place within one and the same day (unless the game tells you otherwise). Locations do not correspond to actual, real-life positions of buildings; you can freely move between different locations without restrictions. However, this kind of movement may still result in random events. Upon entering a new location card inside a settlement, you must roll the travel die in the same way as if you were drawing a road card. You can leave a settlement from any location card by moving the Hunters marker onto the map card corresponding to that location."
+    },
+    {
+      "id": "magic-attack-enemy",
+      "term": "Magic Attack (Enemy)",
+      "category": "combat",
+      "definition": "There are two types of Magic Attacks: a Magic Attack that can be performed while being engaged, and a Magic Attack that can be performed while being at a certain range. A Magic Attack is performed in a very similar way as a Ranged Attack and a Melee Attack, with two following exceptions: the target's magic defense is taken into consideration; and when counting successes, add the attacker's Knowledge attribute value instead of their Strength or Agility value."
+    },
+    {
+      "id": "magic-attack-hero",
+      "term": "Magic Attack (Hero)",
+      "category": "combat",
+      "definition": "There are two types of Magic Attacks: a Magic Attack that can be performed while being engaged, and a Magic Attack that can be performed while being at a certain range. A Magic Attack is performed in a very similar way as a Ranged Attack and a Melee Attack, with three following exceptions: the target's magic defense is taken into consideration; the attack range is always listed on its action card and is not based on any weapon used (range 0 indicates the possibility of performing the attack while engaged); and when counting successes, add the attacker's Knowledge attribute value instead of their Strength or Agility value."
+    },
+    {
+      "id": "staff",
+      "term": "Staff",
+      "category": "equipment",
+      "definition": "A Staff is one of the weapon types. It is used to perform Magic Attacks during a quest. If the Staff has some attached additions providing traits (e.g. Immobilize), they can only be used when resolving Magic Attacks, not any spells used by a given hero. For example, they couldn't be used when resolving a spell causing an enemy to be Poisoned (considering that a given spell is not an attack)."
+    },
+    {
+      "id": "map-card",
+      "term": "Map Card",
+      "category": "general",
+      "definition": "The whole realm where heroes travel outside of quests is shown using 20 map cards placed in 4 rows of 5 cards. Map cards are initially placed face-down, but as the campaign progresses more and more are revealed. Each map card has a unique number and threat level affecting any road cards drawn (there are three threat levels: I, II and III). Each move of the Hunters marker (i.e. travel) between map cards takes 1 day. You can travel in any direction, orthogonally and diagonally. When the Hunters marker travels between map cards, you may encounter a randomly drawn event: right after moving the Hunters marker, roll the Travel Die (2 sides have the icon, 4 others are blank). Each result with the icon means that you draw and read a road card. Some face-up map cards also feature the Port icon, which enables you to travel by river."
+    },
+    {
+      "id": "melee-attack-enemy",
+      "term": "Melee Attack (Enemy)",
+      "category": "combat",
+      "definition": "A Melee Attack can only be performed by an enemy engaged with its opponent. When resolving this attack, perform the following steps:\n\n1. Choose target: The acting enemy attacks a hero on its space. If there is more than one hero, the enemy chooses the one with the lowest melee defense against its Melee Attack (including any traits, e.g. Pierce). If there is still a tie, the target becomes the hero who acts earlier in the turn order this round.\n\n2. Roll to hit: The acting enemy rolls attack dice (their number is listed on its enemy card). The efficiency of the roll is defined by the enemy action card used \"Attack x\". Each die showing a result equal to or lower than \"x\" is a success (a hit). The \"Golden Rule\" applies.\n\n3. Additional rolls: If the acting enemy obtained \"1\", it may make an additional roll with all dice showing this result. The to hit difficulty remains unchanged. It should keep rolling until no die shows \"1\".\n\n4. Determine attack strength: Add all successes, then add the acting enemy's Strength. The sum is the enemy's total attack strength.\n\n5. Target defense: Subtract the target's melee defense from the total attack strength.\n\n6. Damage: The final result is the number of damage dealt to the target. Lower the hero's current Health by that many levels. If the hero's Health is now 0, they are immediately considered unconscious and can no longer resolve their turns until they are revived."
+    },
+    {
+      "id": "melee-attack-hero",
+      "term": "Melee Attack (Hero)",
+      "category": "combat",
+      "definition": "A Melee Attack can only be performed by a hero engaged with their enemy. When resolving a Melee Attack, perform the following steps:\n\n1. Choose an action card enabling you to perform a Melee Attack: The acting hero may choose an action card from their hand or perform the basic action \"Melee Attack 1\".\n\n2. Choose weapon: The acting hero may choose to attack with any weapon featuring the Melee Attack icon that they have in their inventory. If the hero has no such weapon, they fight using an improvised weapon or fists.\n\n3. Choose target: The attacking hero chooses which enemy they attack. Any enemy on the same space may be targeted.\n\n4. Roll to hit: The acting hero rolls attack dice (their number is listed on their weapon token). The efficiency of the roll is defined by the action card used \"Attack x\". Add or subtract from \"x\" the to hit modifier of the weapon. Each die showing a result equal to or lower than the modified \"x\" is a success. The \"Golden Rule\" applies.\n\n5. Additional rolls: If the acting hero obtained \"1\", they may make an additional roll with all dice showing this result. The to hit difficulty remains unchanged. Keep rolling until no die shows \"1\".\n\n6. Determine attack strength: Add all successes, then add the acting hero's Strength. The sum is the hero's total attack strength.\n\n7. Target defense: Subtract the target's melee defense from the total attack strength.\n\n8. Damage: The final result is the number of damage dealt. Place the corresponding number of damage tokens next to the enemy's miniature. If the enemy's Health is lowered to 0, it is immediately considered eliminated and removed from the board.\n\nUnarmed Combat: If the acting hero uses no Melee Attack weapon, they only roll 1 die and add their Strength, halving its value (rounding down)."
+    },
+    {
+      "id": "miniature",
+      "term": "Miniature",
+      "category": "general",
+      "definition": "Indicates every hero, ally or enemy appearing on a quest map (all of them are represented by miniatures)."
+    },
+    {
+      "id": "morale",
+      "term": "Morale",
+      "category": "general",
+      "definition": "Morale represents heroes' determination and resolve to act. The morale track showing the current morale level can be found on any hero board. High morale makes heroes more efficient, while low morale makes even the simplest activities challenging. The morale track is divided into 2 sections. The two lowest spaces (red) indicate low morale and have negative effects. All the upper spaces (from 3 to 5 varying by hero) make heroes act more efficiently. Whenever a hero spends 1 morale point, they slide their morale cube 1 space down the track. A hero can only use 1 morale point at a time.\n\nMorale can be spent in the following ways: 1) When performing a test, a hero may spend 1 morale to add 1 to the test result (this decision can be made after rolling the die; if this is a group test, each hero may use morale). 2) When performing an attack (after rolling to hit), a hero may spend 1 morale to increase their Strength, Agility, or Knowledge by 1. 3) When performing a Move, a hero may spend 1 morale to increase their Move by 1 (this does not cause a miniature to stop upon entering difficult terrain or a vantage point).\n\nWhen a hero's morale level reaches the first negative space, they lower all of their attributes (Strength, Agility, Knowledge and Perception) by 1 when resolving quests, starting from their next action. No attribute can go below 0. If a hero's morale level reaches the lowest point, they lower all of their attributes by 1 both while resolving quests and during all other tests between quests. Whenever a hero with the lowest morale would be forced to lower it again, they lose 1 Health instead."
+    },
+    {
+      "id": "mighty",
+      "term": "Mighty",
+      "category": "traits",
+      "definition": "Mighty is one of the traits (p. 21). The effect works even if its corresponding attack deals no damage to its target. Effects of this trait are cumulative, but no miniature can have more than 2 tokens (tokens are double-sided, so this could be 2 tokens with a value of \"1\" or 1 token with a value of \"2\"). The effect starts from the next activity."
+    },
+    {
+      "id": "move-enemy",
+      "term": "Move (Enemy)",
+      "category": "actions",
+      "definition": "Thanks to the \"Move x\" action, a given miniature can move up to \"x\" spaces in any direction. Miniatures can move to any adjacent spaces both orthogonally and diagonally. Miniatures can move through spaces with their allies, but must immediately end their Move when they enter a space with their opponent. An enemy which (for any reason) leaves the board cannot return until the end of the current quest. There is no limit to the number of miniatures which may occupy one board space. Moves can be limited by terrain features. The Move value cannot be lower than 1, even with multiple negative modifiers.\n\nAn enemy move is divided into two types: \"toward target\" or \"away from target\".\n\nMoving toward target: At the beginning of a toward-target Move, the acting enemy chooses the hero it can reach by performing the shortest Move (taking into account potential obstacles). If there is more than one hero at the same distance, the enemy chooses the one with the lowest defense against its basic attacks. If there is still a tie, the target becomes the hero who acts earlier in the turn order this round. If the enemy can reach its target by following a few similar paths, players choose the path together.\n\nMoving away from target: The enemy performs its Move so that once it ends, it is as far away from all heroes as possible. If the enemy can reach the same distance in different directions, it tries to get as close as possible to any of its allies. If the path cannot be clearly determined, players choose together. If moving away from target would not bring any benefit (the distance would be the same), the acting enemy performs the next action from its card instead of moving."
+    },
+    {
+      "id": "move-hero",
+      "term": "Move (Hero)",
+      "category": "actions",
+      "definition": "Thanks to the \"Move x\" action, a given miniature can move up to \"x\" spaces in any direction. Miniatures can move to any adjacent spaces both orthogonally and diagonally. Miniatures can move through spaces with their allies, but must immediately end their Move when they enter a space with their opponent. A hero performing a Move can, at any time, leave the board as if there were more spaces beyond the edge. A miniature which (for any reason) leaves the board cannot return until the end of the current quest. There is no limit to the number of miniatures which may occupy one board space. Moves can be limited by terrain features. The Move value cannot be lower than 1, even with multiple negative modifiers."
+    },
+    {
+      "id": "nighttime-quests",
+      "term": "Nighttime Quests",
+      "category": "general",
+      "definition": "Some quests are played during the night. It is always indicated in their special rules. During such quests, all heroes' Line of Sight is limited to the 2 closest spaces."
+    },
+    {
+      "id": "obstacle",
+      "term": "Obstacle",
+      "category": "terrain",
+      "definition": "This is one of the terrain features appearing during quests. Miniatures cannot move through a line marking an obstacle, but it does not block the line of sight (LOS)."
+    },
+    {
+      "id": "offense-tokens",
+      "term": "Offense Tokens",
+      "category": "combat",
+      "definition": "Both enemies and heroes may use offense tokens during quests. When a miniature acquires such a token, it is placed next to it. A hero may decide to use an offense token at the beginning of their attack. It provides a +1 modifier (2 tokens may be used at once to enhance this effect). The token should be discarded after resolving the attack. The tokens work in a similar way for enemies, but they always use all their tokens during their next attack. No miniature can have more than 2 offense tokens at the same time (tokens are double-sided, so this could be 2 tokens with a value of \"1\" or 1 token with a value of \"2\")."
+    },
+    {
+      "id": "opponent",
+      "term": "Opponent",
+      "category": "general",
+      "definition": "The term \"Opponent\" can have 2 meanings. In case of descriptions of enemy activities or capabilities (special abilities, quest descriptions or enemy action cards) it indicates each hero or Non-Player Character (NPC) allied with the heroes (e.g. an Innkeeper). In case of descriptions of hero activities or capabilities (hero action cards, quest descriptions or equipment) it indicates each enemy."
+    },
+    {
+      "id": "parting-leaps-heroes",
+      "term": "Parting Leaps (Heroes)",
+      "category": "actions",
+      "definition": "The Parting Leap is a unique type of the Move action. It pertains to a situation when any hero wants to disengage and move to a different space. The parting leap can be performed using a normal Move or using an action card which only allows a hero to perform the Parting Leap. A hero performing a Parting Leap risks suffering a Penalty Attack: one enemy engaged with them (the one with the highest Strength) can immediately perform one additional and free action, Melee Attack 3. Enemies cannot perform a Penalty Attack if heroes and their allies outnumber enemies on a given space (add the hero performing the Parting Leap to their number). After performing the Parting Leap, a given hero is no longer engaged (assuming the leap has not resulted in sharing the same space with enemies) and can freely use any remaining actions. They may also continue their Move as long as the action card used enables them to move more than 1 space."
+    },
+    {
+      "id": "parting-leaps-enemies",
+      "term": "Parting Leaps (Enemies)",
+      "category": "actions",
+      "definition": "The Parting Leap is a unique type of Move action. It pertains to a situation when any enemy wants to disengage and move to a different space. The possibility to perform a Parting Leap is always indicated on an enemy action card. An enemy performing a Parting Leap risks suffering a Penalty Attack: one of the heroes engaged with a given enemy can immediately perform one additional and free action, Melee attack 3. If more than 1 hero is engaged, they choose who will perform the Penalty Attack. Heroes cannot perform a Penalty Attack if they and their allies are outnumbered by enemies on a given space (add the enemy performing the Parting Leap to their number). After performing the Parting Leap, a given enemy is no longer engaged (assuming the leap has not resulted in sharing the same space with an opponent) and can freely use any remaining activities. Besides the rules described above, the Parting Leap performed by an enemy is resolved in the same way as a Move away from the target."
+    },
+    {
+      "id": "pierce",
+      "term": "Pierce",
+      "category": "traits",
+      "definition": "Pierce \"x\" is one of the traits (p. 21). Its \"x\" value can be from 1 to 3. It reduces the target's defense by \"x\". This trait is cumulative; for example, if you use a weapon along with a reaction, the effects will combine, resulting in a stronger attack. Pierce can never be higher than 3, even in case of cumulative effects."
+    },
+    {
+      "id": "poison",
+      "term": "Poison",
+      "category": "traits",
+      "definition": "Some equipment elements, action cards and enemy abilities can turn normal attacks into poison attacks. There are 4 types of poisons you might encounter: Against Humanoids, Against Monsters, Against Demons, and Against Shapeshifters. Each poison works in the same way but it is only effective against one enemy type. Place a poison token next to the miniature affected by this condition.\n\nEffect during quests: If any attack with the poison trait deals at least 1 damage to its target, the victim suffers 1 additional damage at the beginning of each of its turns, starting from the next turn. The effects of multiple poison wounds do not stack, even if the same target is wounded more than once. If the effect affects its target during actions other than attacks (e.g. when using a spell), dealing damage is not required for this effect to work.\n\nEffect between quests: If a hero has a poison token at the end of a quest or gets such a token in the period between quests (e.g. as a result of a road card), they lower their Health level by 1 at the end of each day. It is possible to remove a poison token by using an ANTIDOTE or playing a proper action card during a quest."
+    },
+    {
+      "id": "plot-card",
+      "term": "Plot Card",
+      "category": "general",
+      "definition": "There are two types of plot cards in the game: Small cards marked \"Sxxx\" and Large cards marked \"Fxxx\".\n\nSmall cards are placed on map cards when a description or effect instructs you to place such a card. They can be placed face-down (with a card number visible) or face-up (with the text visible). Heroes can flip a face-down plot card whenever they travel to a map card with a plot card placed on it. Flipping a card face-up is not mandatory, except for plot cards featuring the icon of a red triangle with a quill; if heroes encounter such a card, they must read it immediately after entering a given map card.\n\nLarge plot cards are placed next to the map and usually appear when heroes talk with Non-Player Characters (NPC), enabling them to choose various dialogue options.\n\nSome plot cards feature the \"!\" icon on their front (next to a particular option), meaning that option is required to complete the main quest. The small plot card backs are marked if they belong to the main plot, having a red stripe instead of a blue stripe. Some red-striped card backs feature additional information marked as \"xx\", meaning a given card must be revealed before the end of day \"xx\"; otherwise players will not be able to finish the main quest within 60 days."
+    },
+    {
+      "id": "push",
+      "term": "Push",
+      "category": "traits",
+      "definition": "Push is one of the traits (p. 21). It forces a targeted miniature to Move 1. The target is pushed in a direction chosen by the hero causing the effect, but it must always result in increasing the distance between the pushing and pushed miniatures. At the beginning of their turn, a hero may choose to ignore this trait if it does not benefit them. Push effects are not cumulative. Moving to the chosen space must be possible according to normal rules. The target can be pushed to a space with other miniatures or traps. It is possible to push both an enemy or an ally as long as the performed action allows it. The pushed target can suffer a Penalty Attack. Pushing is resolved at the end of the performed action."
+    },
+    {
+      "id": "ranged-attack-hero",
+      "term": "Ranged Attack (Hero)",
+      "category": "combat",
+      "definition": "A Ranged Attack can be performed by a hero who is not engaged and has a target in their Line of Sight (LOS) and within their ranged weapon's range. When resolving this attack, perform the following steps:\n\n1. Choose an action card enabling you to perform a Ranged Attack: The acting hero may choose an action card from their hand or perform the basic action \"Attack 1\".\n\n2. Choose weapon: The acting hero may choose to attack with any weapon featuring the Ranged Attack icon that they have. If the hero has no such weapon, they cannot perform a Ranged Attack.\n\n3. Choose target: The attacking hero chooses which enemy they attack. Any enemy in LOS and the weapon's range may be targeted.\n\n4. Roll to hit: The acting hero rolls attack dice (their number is listed on their weapon token). The efficiency of the roll is defined by the action card used \"Attack x\". Add or subtract from \"x\" the to hit modifier of the weapon. Each die showing a result equal to or lower than the modified \"x\" is a success. The \"Golden Rule\" applies.\n\n5. Additional rolls: If the acting hero obtained \"1\", they may make an additional roll with all dice showing this result. Keep rolling until no die shows \"1\".\n\n6. Determine attack strength: Add all successes, then add the acting hero's Agility. The sum is the hero's total attack strength.\n\n7. Target defense: Subtract the target's ranged defense from the total attack strength.\n\n8. Damage: The final result is the number of damage dealt. Place the corresponding damage tokens next to the enemy's miniature. If the enemy's Health is lowered to 0, it is eliminated and removed from the board."
+    },
+    {
+      "id": "ranged-attack-enemy",
+      "term": "Ranged Attack (Enemy)",
+      "category": "combat",
+      "definition": "A Ranged Attack can be performed by every unengaged enemy who has a target in its Line of Sight (LOS) and in their weapon's range. When resolving this attack, perform the following steps:\n\n1. Choose target: The acting enemy attacks the closest hero. If there is more than one hero at the same distance, the enemy chooses the one with the lowest ranged defense against its Ranged Attacks (including any traits, e.g. Pierce). If there is still a tie, the target becomes the hero who acts earlier in the turn order this round. Enemies never choose an engaged opponent as its target unless there are no other opponents to choose from.\n\n2. Roll to hit: The acting enemy rolls attack dice (their number is listed on its enemy card). The efficiency of the roll is defined by the enemy action card used \"Attack x\". Each die showing a result equal to or lower than \"x\" is a success. The \"Golden Rule\" applies.\n\n3. Additional rolls: If the acting enemy obtained \"1\", it may make an additional roll with all dice showing this result. It should keep rolling until no die shows \"1\".\n\n4. Determine attack strength: Add all successes, then add the acting enemy's Agility. The sum is the enemy's total attack strength.\n\n5. Target defense: Subtract the target's ranged defense from the total attack strength.\n\n6. Damage: The final result is the number of damage dealt. Lower the hero's current Health by that many levels. If the hero's Health is now 0, they are considered unconscious and can no longer resolve their turns until revived."
+    },
+    {
+      "id": "ranged-or-magic-attack-against-engaged",
+      "term": "Ranged or Magic Attack Against Engaged Miniatures",
+      "category": "combat",
+      "definition": "It may happen during the game that a miniature wants to perform a Ranged Attack or ranged Magic Attack against an engaged opponent. Resolve such an attack normally, with one exception. Once the target of the attack is chosen, roll D6. If a \"6\" is rolled, the attacker's ally in this engagement is hit instead of the original target. If there are more of the attacker's allies who can be affected by the attack, randomly determine the one who becomes the target of the unlucky hit."
+    },
+    {
+      "id": "reaction",
+      "term": "Reaction",
+      "category": "actions",
+      "definition": "The lower half of action cards feature a description of the available reaction. A reaction enables the acting hero to interrupt someone's turn (their own, their enemy's or their ally's) in order to influence the action being currently resolved. A card used to perform an action cannot be simultaneously used for its reaction; when playing a card, a player has to choose if they use its upper half (action) or its lower half (reaction).\n\nOnly 1 reaction can be played per 1 action performed by a hero or enemy. If more than one hero plans to play a reaction, they must choose together who will be the only one to use their reaction. The upper part of a reaction description explains when it can be used. There are four options: \"enemy turn\" (red), \"your turn\" (green), \"ally turn\" (blue), and \"your turn or your ally's turn\" (purple). The bottom of the description explains in detail when to play a given reaction. If a reaction is played during an action comprised of many activities, it affects only 1 activity chosen by a player (unless the reaction description says otherwise). If a reaction provides a few bonuses divided with \"/\", all such bonuses are added simultaneously (e.g. \"+1 / +1\" increases both Strength and Agility)."
+    },
+    {
+      "id": "regenerate",
+      "term": "Regenerate",
+      "category": "general",
+      "definition": "A miniature with the ability \"x\" (regenerate) regains \"x\" Health levels at the end of their turn. The regenerate ability only works when a miniature has damage. Regeneration only works during quests."
+    },
+    {
+      "id": "reload",
+      "term": "Reload",
+      "category": "traits",
+      "definition": "Reload is one of the traits (p. 21). Some ranged weapons in the game require reloading. At the start of the game, place a reload token with its \"Loaded\" side face-up on any weapon with this trait. After attacking, flip the token to its \"Empty\" side. To make the weapon usable again, a hero must perform the Reload (Interact) action."
+    },
+    {
+      "id": "reorganize",
+      "term": "Reorganize",
+      "category": "actions",
+      "definition": "When performing the Interact action, the acting hero can freely rearrange different equipment on their board (e.g. swap a bow they are holding for a sword from their backpack). They can also freely exchange equipment with other heroes on the same space. The number of exchanges as part of 1 such action is unlimited. Heroes with whom such an exchange is performed may be unconscious."
+    },
+    {
+      "id": "repairing-damaged-armor",
+      "term": "Repairing Damaged Armor",
+      "category": "equipment",
+      "definition": "If a hero is the target of an armor-destroying effect, place 1 destruction marker on their armor. Each destruction marker permanently lowers all of a given armor's defense types by 1 (to a minimum of 0). If a given hero gets rid of a given equipment piece in the future, they discard all destruction markers along with it. Repairing a damaged armor is possible in the wagon used by heroes to travel (the repair cost is 1 for each destruction marker). See also: Armor."
+    },
+    {
+      "id": "resources",
+      "term": "Resources",
+      "category": "general",
+      "definition": "Resources are represented by over a dozen kinds of tokens and used to construct new equipment elements or to trade. Resources are divided into the following categories: Materials (Diamond, Yarn, Saltpeter, Leather, Steel, Silver), Plants (Mushroom, Root, Flower, Leaf, Stalk, Fruit), and Trophies (Monster Venom, Monster Egg, Monster Bone, Monster Blood, Monster Fur, Monster Fat)."
+    },
+    {
+      "id": "revive",
+      "term": "Revive",
+      "category": "actions",
+      "definition": "A hero on the same space with their unconscious ally may perform an Interact action to cause them to recover 1 Health level. The revived ally can resolve their turn normally starting from the next round."
+    },
+    {
+      "id": "road-card",
+      "term": "Road Card",
+      "category": "general",
+      "definition": "Road cards are drawn when traveling between map cards. Right after moving the Hunters marker, roll the Travel Die (2 sides have the icon, 4 others are blank). Each result with the icon means that you draw and read a road card. Road cards are divided into 3 separate piles reflecting different difficulty levels of threats in various regions. Level I cards are the easiest, while level III cards pose a real challenge even to seasoned Hunters. The level of the pile drawn from depends on the Roman numeral shown right above the number of the map card you travel to. A road card should always be drawn from the bottom of the proper pile. If all cards from a road card pile are depleted, draw from the pile with a higher difficulty level instead (e.g. a level II card instead of a level I card). If that is impossible, reshuffle a given pile and use it again."
+    },
+    {
+      "id": "round",
+      "term": "Round",
+      "category": "general",
+      "definition": "Each quest is divided into rounds whose number for the current quest is indicated in the \"Quest Goal\" section. Each round heroes play their turns by performing 2 actions each, and their enemies resolve their turns by performing 1 action each. Once each hero and each enemy resolves their turn, the current round ends. At the beginning of the quest, place the round marker on the space of the round track indicated in the quest description (round 6 for quest 1). You will move it 1 space after each round.\n\nEach round is divided into the following steps: 1. Draw action cards (only heroes). 2. Determine order. 3. Hero and enemy turns."
+    },
+    {
+      "id": "runes",
+      "term": "Runes",
+      "category": "equipment",
+      "definition": "Runes are one of the weapon additions. They are the only addition which cannot be freely removed from weapons. Once a rune is forged on a weapon, it stays on it until the end of the game. Once a rune weapon is sold or lost, its rune token returns to the pool of available equipment tokens."
+    },
+    {
+      "id": "services-in-settlements",
+      "term": "Services in Settlements",
+      "category": "general",
+      "definition": "Certain location cards list available services. If a given location offers a few various services, each hero may use a different one (e.g. at an Inn, some heroes may choose to work and some to rest).\n\nSimple work: Each day spent working in the Inn brings gold to each hero from the group. This kind of work may last any number of days.\n\nRest: Allows heroes to rest. Each hero has to pay for each day, gaining 1 morale in return.\n\nHeal: It is possible to regain Health for a cost. Alternatively, by paying the same cost, a hero may remove a poison token."
+    },
+    {
+      "id": "shield",
+      "term": "Shield",
+      "category": "equipment",
+      "definition": "A shield is one of the equipment types. It is used for defense during a quest. It is divided into 2 sizes: taking 1 or 2 slots on hero boards. Each hero has from 2 to 4 slots on their board to place a shield; these are the same slots as the ones for weapons. A shield can be used whenever a hero becomes the target of a Melee Attack or a Ranged Attack. No action or reaction is required to use a shield. During an attack, a defined enemy Strength or Agility value is changed into an equal number of attack dice (e.g. an attacker lowers their Strength by 2, but in exchange gets 2 additional attack dice). Some shield types negatively affect a hero's Move. All modifiers as well as other equipment traits are not active if a shield is carried in the backpack. A hero can have only one shield on its matching slots. Optionally, additional shields can be placed on backpack slots."
+    },
+    {
+      "id": "stun",
+      "term": "Stun",
+      "category": "traits",
+      "definition": "Stun is one of the traits (p. 21). If a target is successfully dealt at least 1 damage with a stun attack, they cannot perform any actions or Penalty Attacks, or play any reaction cards in their next turn. The target's next turn can take place in the same or in the next round (depending on the order of hero and enemy turns). Place a stun marker next to the target and leave it until the end of their next turn. If all opponents on a given space are stunned, the other miniatures are considered as if they were not engaged. Stun can also result from playing an action card which is not an attack; in such a situation, dealing 1 damage is not required and the effect is applied automatically."
+    },
+    {
+      "id": "set-trap",
+      "term": "Set Trap",
+      "category": "actions",
+      "definition": "A hero who has a trap token may perform the Interact action to set (place) it on their space. More details can be found under Traps."
+    },
+    {
+      "id": "settlement",
+      "term": "Settlement",
+      "category": "general",
+      "definition": "Settlements (towns) are special places on the map. Once entered, they enable heroes to explore their corresponding location cards."
+    },
+    {
+      "id": "task-card",
+      "term": "Task Card",
+      "category": "general",
+      "definition": "Task cards introduce players to side quests not linked with the main campaign plot. Heroes can always read all task cards on the map no matter where they are currently located. Each task card front features narrative text and indicates its difficulty: easy, medium or hard. Each task card back features an instruction informing players what they should do in order to undertake a given task, along with a description of a reward offered for finishing it (this is just a promise for the moment -- heroes will gain it once they successfully end a given task)."
+    },
+    {
+      "id": "temporary-terrain-features-traps",
+      "term": "Temporary Terrain Features - Traps",
+      "category": "terrain",
+      "definition": "Besides permanent terrain features, such as walls, vantage points or covers, you may also encounter temporary terrain features during quests -- traps. They are represented with dedicated terrain tokens. Their rules are always described in detail in the special rules of a particular quest. Traps can range from primitive snares to typical bear traps or sophisticated fire bombs. The general rules for these traps are similar to those used for traps set by heroes -- their activation occurs when a miniature enters a space with a set trap. These traps are active from the beginning of a quest."
+    },
+    {
+      "id": "terrain-features",
+      "term": "Terrain Features",
+      "category": "terrain",
+      "definition": "Terrain features are shown on maps during quests. The following terrain features can be found in the game: wall, obstacle, hiding terrain, difficult terrain (rough / water / swamp), cover, bottleneck, finding, and vantage point."
+    },
+    {
+      "id": "time-tokens",
+      "term": "Time Tokens",
+      "category": "general",
+      "definition": "Time tokens are used to temporarily block the possibility to reveal certain event cards. An instruction forcing you to place a time token always states in how many days a given token can be removed, thus \"unlocking\" a given card."
+    },
+    {
+      "id": "tome-of-tales",
+      "term": "Tome of Tales",
+      "category": "general",
+      "definition": "Often you will be instructed to use the Tome of Tales, which contains a few hundred entries numbered as follows \"X.XX\". Each entry describes a particular situation or consequences of actions, and players will be directed to it through quests, cards and other entries."
+    },
+    {
+      "id": "town-card",
+      "term": "Town Card",
+      "category": "general",
+      "definition": "Town cards are drawn when traveling between location cards. Right after moving the Hunters marker, roll the Travel Die (2 sides have the icon, 4 others are blank). Each result with the icon means that you draw and read a town card. Town cards have no levels. They are always drawn from the bottom of the pile. If all town cards have been used during the game, reshuffle the pile and use it again."
+    },
+    {
+      "id": "trade-in-settlements",
+      "term": "Trade in Settlements",
+      "category": "general",
+      "definition": "Each location card enables you to buy and sell equipment or resources. There are 2 columns next to names of equipment / resources. The first one lists the purchase price of a given item and the second one its sale price. You can buy any number of equipment elements or resources as long as such a transaction has a listed price and corresponding equipment tokens are available."
+    },
+    {
+      "id": "traits",
+      "term": "Traits",
+      "category": "traits",
+      "definition": "Traits are additional effects imposed upon a miniature as part of attacks affecting it. Traits usually appear on weapon tokens, but they are also found on trap tokens, grenades or additions. Often enemy attacks are enhanced by traits. Most trait effects are applied automatically; heroes or enemies cannot simply resign from using them while performing their attacks. There are only two traits that heroes can choose not to use: Area and Push. Traits may not always be connected with attacks -- there are actions (spells in particular) which are not attacks but automatically inflict some trait effects on their target.\n\nThe traits in the game are: Light, Area, Pierce \"x\", Burn, Poison, Mighty, Stun, Immobilize, Push, and Reload.\n\nIf a given action triggers a few different trait effects, they should be resolved in the following order (starting from the first applicable): Light, Area, Pierce, Burn, Poison, Mighty, Stun, Immobilize, Push, Reload. At the end of the quest, heroes remove all trait tokens they received except Mighty and Pierce."
+    },
+    {
+      "id": "traps",
+      "term": "Traps",
+      "category": "equipment",
+      "definition": "Traps are a special kind of equipment. Traps are carried in the same way as other backpack items, on blue slots on a hero board. A hero must perform the Interact action in order to use them. Besides characteristics typical for any equipment (name, type and effect duration), the lower part of a token features the way a given trap works -- usually an attack described using attack type, Strength / Agility / Knowledge, number of attack dice and range. All trap attacks are treated as Attack 3. Traps can also have traits (just like weapons).\n\nTraps are set as follows: 1) A hero with a trap performs the Interact action. 2) The hero leaves the space with the trap. 3) The trap becomes active.\n\nDuring the game you will encounter quests enabling heroes to place traps during the quest setup. In such situations, all traps are active from the beginning of a given quest except for the ones on spaces occupied by heroes; they will be activated once the original owner leaves the space with the trap. Some traps do not have any attack characteristics. They do not deal any damage, but cause other effects instead, such as Immobilize or Stun. If a trap has no attack characteristics, its effective use does not require any roll or test; once an action is performed, its matching effect is automatically applied to all targets described on a given token."
+    },
+    {
+      "id": "wagon",
+      "term": "Wagon",
+      "category": "general",
+      "definition": "The Wagon board you set up at the beginning of the campaign features 5 Upgrade Slots, which are empty at the beginning of the game. The Wagon is your common good; you upgrade it together and it serves all heroes to the same extent. Each Wagon upgrade to level 1 costs 2, to level 2 costs 3 and to level 3 costs 5. You may upgrade the Wagon at any point between quests as long as heroes discard the required resources. Once the cost is paid, you choose a space and place a matching cube representing the upgrade you have chosen.\n\nThe Wagon can be upgraded in the following categories: Armorer's Tools (armor, shields), Alchemist's Lab (concoctions, herbs, potions, gunpowder), Bowyer's Table (bows, arrows, crossbows), Workshop (clothes, traps, jewelry, shafts), and Blacksmith's Tools (arrowheads, melee weapons, firearms).\n\nOne additional function of the wagon is storing equipment and resources; it accommodates an unlimited number of them. At any point between quests, any hero may store or take any game component from the wagon. From the moment you start a quest (from the moment you open the Tome of Quests) you can no longer exchange any equipment on your hero boards nor take anything from the wagon until the end of the current quest."
+    },
+    {
+      "id": "traveling-by-river",
+      "term": "Traveling by River",
+      "category": "general",
+      "definition": "Besides the typical way of traveling by roads, there is an option for a much faster and safer travel by rivers. This type of travel is only possible if the Hunters marker is placed on a map card with the Port icon. Instead of moving normally, you may move to any other map card with this icon (it does not have to be the closest port). Such movement takes 1 day. However, a river barge is not cheap: whenever you travel by river, you have to pay half a ducat for each hero in the group. Players do not draw road cards during such travel."
+    },
+    {
+      "id": "wall",
+      "term": "Wall",
+      "category": "terrain",
+      "definition": "This is one of the terrain features appearing during quests. Miniatures cannot move through a line marking a wall, and it also blocks the line of sight (LOS)."
+    },
+    {
+      "id": "weapon",
+      "term": "Weapon",
+      "category": "equipment",
+      "definition": "Weapons are one of the equipment types. They are used to perform attacks during a quest. They are divided into 3 categories: Melee weapons, Ranged weapons and Magic weapons. Additionally, weapon tokens are divided into 3 sizes: taking 1, 2 or 3 slots on hero boards. Each hero has from 2 to 4 slots on their board to place weapons. If a chosen weapon enables a hero to perform two types of attacks, all weapon traits and negative modifiers only pertain to the basic attack type (e.g. when using an Arquebus to Melee Attack it has no Piercing and Reload traits). Heroes can have any number of weapons as long as they fit into their available slots (excess weapons can be placed on backpack slots).\n\nSome weapon types negatively affect a hero's Perception. Such a modifier is only used during quests; outside of quests (e.g. attribute tests) it should be ignored. All modifiers as well as other equipment traits are not active if a weapon is carried in the backpack.\n\nMelee Combat with 2 Weapons: Usually, if a hero has 2 weapons in their inventory, it does not affect their attack actions -- before they perform an Attack Action, they must choose the weapon to attack with. However, some action cards provide bonuses to a hero using 2 weapons. In such situations, both weapons must be placed in slots provided for melee weapons, and they cannot be placed in the backpack."
+    },
+    {
+      "id": "vantage-point",
+      "term": "Vantage Point",
+      "category": "terrain",
+      "definition": "This is one of the terrain features appearing during quests. Miniatures occupying a vantage point increase the range of their Ranged Attacks and ranged Magic Attacks by 1. A miniature entering a vantage point space from a non-vantage point space must immediately end its movement."
+    }
+  ]
+}
