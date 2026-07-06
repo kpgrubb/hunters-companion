@@ -42,9 +42,10 @@ works without a connection during game night.
 
 - Glossary text is extracted from the game's official **Rules Compendium (EN)** and belongs
   to its publisher. This is a fan tool — for a first game, use the printed *How To Play* rulebook.
-- The compendium lists enemy miniatures but **not** their stat lines (attributes/defenses are
-  printed on the physical enemy cards). The Bestiary therefore shows the roster + flavor; add a
-  `stats` field in `src/data/enemies.ts` if you transcribe the cards.
+- The Bestiary contains full stat blocks for all **27 enemy cards** — health, attributes,
+  attack profiles (to-hit + dice), and special abilities — transcribed from photos of the physical
+  cards into `src/data/enemies.ts`. Attribute icons for Perception and Knowledge are certain; the
+  Strength/Agility labels (leaf vs arrow icon) are a best-effort reading and may be swapped.
 - Glossary data lives in `src/data/glossary.json` — edit freely.
 
 ## Project layout
