@@ -3,13 +3,7 @@ import type { ReactNode } from 'react'
 import { terms } from '../data/glossary'
 import { enemies, enemyGroupLabels } from '../data/enemies'
 import type { Enemy } from '../types'
-
-const groupAccent: Record<Enemy['group'], string> = {
-  human: 'border-l-iron-light',
-  beast: 'border-l-moss',
-  supernatural: 'border-l-blood',
-  insectoid: 'border-l-gold',
-}
+import EnemyCard from '../components/EnemyCard'
 
 export default function CombatPage() {
   const combatTerms = useMemo(
@@ -79,9 +73,10 @@ export default function CombatPage() {
       <section>
         <SectionHeading>Bestiary</SectionHeading>
         <p className="mb-4 rounded-md border border-border-rune bg-panel/60 px-4 py-2.5 text-xs italic leading-relaxed text-parchment-dim">
-          The Rules Compendium lists the enemy miniatures but not their stat lines — attributes and
-          defenses live on the physical enemy cards. Counts below are the miniatures included in the
-          box.
+          All {enemies.length} enemy cards, transcribed from the physical cards. Attack values are the
+          “Attack x” to-hit target (each die ≤ x is a hit) plus the number of dice. Attribute icons
+          for Perception and Knowledge are certain; Strength/Agility labels are our best reading. Tap
+          a card to see its special abilities.
         </p>
         <div className="space-y-6">
           {groups.map(({ group, list }) => (
@@ -89,20 +84,9 @@ export default function CombatPage() {
               <h3 className="mb-2 font-display text-sm uppercase tracking-widest text-parchment">
                 {enemyGroupLabels[group]}
               </h3>
-              <div className="grid gap-2.5 sm:grid-cols-2">
+              <div className="grid items-start gap-3 sm:grid-cols-2">
                 {list.map((e) => (
-                  <div
-                    key={e.id}
-                    className={`rune-card flex items-start gap-3 rounded-lg border-l-4 p-3 ${groupAccent[e.group]}`}
-                  >
-                    <span className="mt-0.5 grid h-7 min-w-7 shrink-0 place-items-center rounded bg-black/40 px-1.5 text-xs font-bold text-gold">
-                      {e.count}×
-                    </span>
-                    <div>
-                      <p className="font-display text-[15px] text-parchment">{e.name}</p>
-                      <p className="text-xs leading-relaxed text-parchment-dim">{e.note}</p>
-                    </div>
-                  </div>
+                  <EnemyCard key={e.id} enemy={e} />
                 ))}
               </div>
             </div>
