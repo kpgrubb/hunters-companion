@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
-import { resolveTerm, shortDef } from '../data/terms'
+import { resolveTerm } from '../data/terms'
 import { categoryMeta } from '../data/glossary'
 
 interface TermTipProps {
@@ -12,19 +12,24 @@ interface TermTipProps {
   className?: string
 }
 
+interface Coords {
+  top: number
+  left: number
+  width: number
+  maxHeight: number
+  above: boolean
+}
+
 /**
  * Inline term with a dotted underline. Hovering (desktop) or tapping (touch)
- * reveals a small popover with a plain-language definition and a link into the
- * full glossary entry. Falls back to plain text if the term can't be resolved.
+ * reveals a popover with the full glossary definition — sized to the available
+ * space and scrollable if it's very long. Falls back to plain text if the term
+ * can't be resolved.
  */
 export default function TermTip({ term, children, className = '' }: TermTipProps) {
   const entry = resolveTerm(term)
   const [open, setOpen] = useState(false)
-  const [coords, setCoords] = useState<{ top: number; left: number; above: boolean }>({
-    top: 0,
-    left: 0,
-    above: false,
-  })
+  const [coords, setCoords] = useState<Coords>({ top: 0, left: 0, width: 340, maxHeight: 400, above: false })
   const triggerRef = useRef<HTMLButtonElement>(null)
   const popRef = useRef<HTMLDivElement>(null)
   const closeTimer = useRef<number>(0)
@@ -32,13 +37,19 @@ export default function TermTip({ term, children, className = '' }: TermTipProps
   const place = () => {
     const el = triggerRef.current
     if (!el) return
+    const margin = 12
     const r = el.getBoundingClientRect()
-    const W = Math.min(320, window.innerWidth - 24)
-    let left = r.left + r.width / 2 - W / 2
-    left = Math.max(12, Math.min(left, window.innerWidth - W - 12))
-    const above = r.bottom + 200 > window.innerHeight && r.top > 220
+    const width = Math.min(360, window.innerWidth - margin * 2)
+    let left = r.left + r.width / 2 - width / 2
+    left = Math.max(margin, Math.min(left, window.innerWidth - width - margin))
+
+    const spaceBelow = window.innerHeight - r.bottom - margin - 8
+    const spaceAbove = r.top - margin - 8
+    const above = spaceAbove > spaceBelow
+    // Fill the roomier side (up to 82% of the viewport) so as much shows as possible.
+    const maxHeight = Math.min(Math.max(above ? spaceAbove : spaceBelow, 160), window.innerHeight * 0.82)
     const top = above ? r.top - 8 : r.bottom + 8
-    setCoords({ top, left, above })
+    setCoords({ top, left, width, maxHeight, above })
   }
 
   useLayoutEffect(() => {
@@ -53,16 +64,20 @@ export default function TermTip({ term, children, className = '' }: TermTipProps
       setOpen(false)
     }
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false)
-    const onScroll = () => setOpen(false)
+    // Keep the popover attached to the term while the page scrolls / resizes.
+    const reposition = (e: Event) => {
+      if (popRef.current && e.target instanceof Node && popRef.current.contains(e.target)) return
+      place()
+    }
     window.addEventListener('pointerdown', onDown)
     window.addEventListener('keydown', onKey)
-    window.addEventListener('scroll', onScroll, true)
-    window.addEventListener('resize', onScroll)
+    window.addEventListener('scroll', reposition, true)
+    window.addEventListener('resize', reposition)
     return () => {
       window.removeEventListener('pointerdown', onDown)
       window.removeEventListener('keydown', onKey)
-      window.removeEventListener('scroll', onScroll, true)
-      window.removeEventListener('resize', onScroll)
+      window.removeEventListener('scroll', reposition, true)
+      window.removeEventListener('resize', reposition)
     }
   }, [open])
 
@@ -73,9 +88,10 @@ export default function TermTip({ term, children, className = '' }: TermTipProps
   }
   const scheduleClose = () => {
     cancelClose()
-    closeTimer.current = window.setTimeout(() => setOpen(false), 140)
+    closeTimer.current = window.setTimeout(() => setOpen(false), 160)
   }
   const meta = categoryMeta[entry.category]
+  const paragraphs = entry.definition.split('\n\n')
 
   return (
     <>
@@ -89,7 +105,7 @@ export default function TermTip({ term, children, className = '' }: TermTipProps
         }}
         onPointerLeave={scheduleClose}
         aria-expanded={open}
-        className={`cursor-help border-b border-dotted border-gold/60 text-inherit decoration-gold/60 underline-offset-2 transition-colors hover:border-gold hover:text-gold-bright focus:outline-none focus-visible:text-gold-bright ${className}`}
+        className={`cursor-help border-b border-dotted border-gold/60 text-inherit underline-offset-2 transition-colors hover:border-gold hover:text-gold-bright focus:outline-none focus-visible:text-gold-bright ${className}`}
       >
         {children}
       </button>
@@ -105,27 +121,34 @@ export default function TermTip({ term, children, className = '' }: TermTipProps
               position: 'fixed',
               top: coords.top,
               left: coords.left,
-              width: Math.min(320, window.innerWidth - 24),
+              width: coords.width,
+              maxHeight: coords.maxHeight,
               transform: coords.above ? 'translateY(-100%)' : undefined,
             }}
-            className="z-[70] rounded-lg border border-border-rune bg-panel-raised p-3 shadow-xl shadow-black/60"
+            className="z-[70] flex flex-col overflow-hidden rounded-lg border border-border-rune bg-panel-raised shadow-xl shadow-black/60"
           >
-            <div className="mb-1 flex items-baseline justify-between gap-2">
+            <div className="flex items-baseline justify-between gap-2 border-b border-border-rune px-3 py-2">
               <span className="font-display text-sm text-gold-bright">{entry.term}</span>
               <span className={`shrink-0 text-[10px] uppercase tracking-wider ${meta.accent}`}>
                 {meta.label}
               </span>
             </div>
-            <p className="text-[13px] leading-relaxed text-parchment-dim">{shortDef(entry)}</p>
-            {entry.inGlossary && (
-              <Link
-                to={`/glossary?term=${entry.id}`}
-                onClick={() => setOpen(false)}
-                className="mt-2 inline-block text-xs font-display tracking-wide text-gold hover:text-gold-bright"
-              >
-                Open in glossary →
-              </Link>
-            )}
+            <div className="overflow-y-auto px-3 py-2">
+              {paragraphs.map((p, i) => (
+                <p key={i} className="mt-2 text-[13px] leading-relaxed text-parchment-dim first:mt-0">
+                  {p}
+                </p>
+              ))}
+              {entry.inGlossary && (
+                <Link
+                  to={`/glossary?term=${entry.id}`}
+                  onClick={() => setOpen(false)}
+                  className="mt-2.5 inline-block text-xs font-display tracking-wide text-gold hover:text-gold-bright"
+                >
+                  Open in glossary →
+                </Link>
+              )}
+            </div>
           </div>,
           document.body,
         )}
