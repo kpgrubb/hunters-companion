@@ -31,6 +31,47 @@ export const howToPlay: HowToSection[] = [
     ],
   },
   {
+    id: 'travel',
+    title: 'Traveling the map',
+    blocks: [
+      {
+        kind: 'p',
+        text: 'Between quests you explore a realm of 20 map cards (4 rows of 5), revealed as the campaign unfolds. The Hunters marker shows where your party is. Each move to an adjacent map card — orthogonally or diagonally — takes 1 day, so advance the days marker (the main plot runs on a 60-day clock).',
+      },
+      {
+        kind: 'list',
+        items: [
+          'Road encounters — right after moving to a new map card, roll the Travel Die (2 of its 6 sides show the event icon). On an event, draw and read a road card. Each map card shows a threat level (I, II or III) that decides which road-card pile you draw from — level III challenges even seasoned Hunters.',
+          'Traveling by river — from a map card with a Port icon you may sail to any other Port card in a single day and skip road cards entirely. It costs half a ducat per hero — fast and safe, but not free.',
+          'Plot cards — small plot cards sit on map cards; flip them when you arrive (some, marked with a red quill, must be read at once). Large plot cards handle conversations with NPCs and dialogue choices.',
+          'Task cards — side quests you can read anywhere on the map; each shows a difficulty (easy, medium or hard) and a promised reward you collect on completion.',
+        ],
+      },
+      {
+        kind: 'note',
+        text: 'Some quests are fought after dark. During a Nighttime Quest, every hero’s Line of Sight is cut to the 2 nearest spaces.',
+      },
+    ],
+  },
+  {
+    id: 'settlements',
+    title: 'Settlements & downtime',
+    blocks: [
+      {
+        kind: 'p',
+        text: 'Towns and settlements are special places on the map. Enter one and you move among its location cards instead of map cards — and that travel costs no days: everything inside a settlement happens on the same day (though moving between locations can still trigger a town card event).',
+      },
+      {
+        kind: 'list',
+        items: [
+          'Trade — every location lists a buy price and a sell price for equipment and resources; deal in as much as is listed and available.',
+          'Services — a location may offer work (earn gold each day at the Inn), rest (pay per day to regain 1 morale), or heal (pay to regain Health or remove a poison token).',
+          'New quests — settlements are where heroes take on new quests before heading back out onto the map.',
+        ],
+      },
+    ],
+  },
+  {
     id: 'rounds',
     title: 'The flow of a quest',
     blocks: [
@@ -83,7 +124,7 @@ export const howToPlay: HowToSection[] = [
   },
   {
     id: 'movement',
-    title: 'Moving & positioning',
+    title: 'Moving in a quest',
     blocks: [
       {
         kind: 'list',
@@ -158,8 +199,8 @@ export const howToPlay: HowToSection[] = [
         kind: 'list',
         items: [
           'Experience — heroes spend experience points (there are no levels) to raise attributes, buy new action cards for their deck, and open new equipment slots.',
-          'Settlements — visit towns to trade, buy and sell equipment and resources, and use services.',
           'The Wagon — your mobile base; upgrade it to construct equipment and to repair armor (1 resource per damaged piece).',
+          'Resources — materials, plants and monster trophies you gather; spend them to craft equipment or sell them in trade.',
           'Saving — record progress on the save sheets to continue the campaign in a later session.',
         ],
       },
