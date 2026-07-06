@@ -1,4 +1,5 @@
 import { createHashRouter, RouterProvider, Navigate } from 'react-router-dom'
+import Gate from './components/Gate'
 import Layout from './components/Layout'
 import HomePage from './pages/HomePage'
 import GlossaryPage from './pages/GlossaryPage'
@@ -18,5 +19,9 @@ const router = createHashRouter([
 ])
 
 export default function App() {
-  return <RouterProvider router={router} />
+  return (
+    <Gate>
+      <RouterProvider router={router} />
+    </Gate>
+  )
 }
