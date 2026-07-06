@@ -325,7 +325,7 @@ export const enemies: Enemy[] = [
     stats: { health: 18, perception: 4, strength: 7, agility: 7, knowledge: 6 },
     attacks: [{ type: 'magic', attackValue: 3, dice: 3 }],
     abilities: [
-      { name: 'Demonic Protection', text: 'Ignores the status effects listed on its card.' },
+      { name: 'Demonic Protection', text: 'Ignores Stun, Mighty, Immobilize, and Pierce 1–3.' },
       {
         name: 'Aura of Fear',
         text: 'The Wraith’s melee, ranged and magic defense are each lowered by the attacking hero’s Perception value.',
@@ -398,7 +398,7 @@ export const enemies: Enemy[] = [
       { type: 'ranged', attackValue: 2, dice: 2 },
     ],
     abilities: [
-      { name: 'Slime-covered', text: 'Ignores certain sound and mechanism effects (see card icons).' },
+      { name: 'Slime-covered', text: 'Ignores Push and Immobilize.' },
       {
         name: 'Entanglement',
         text: 'Any hero performing a Parting Leap always suffers a Penalty Attack, regardless of cards used or number of heroes.',
@@ -493,8 +493,11 @@ export const enemies: Enemy[] = [
     stats: { health: 17, perception: 1, strength: 3, agility: 3, knowledge: 3 },
     attacks: [{ type: 'melee', attackValue: 3, dice: 2 }],
     abilities: [
-      { name: 'Demonic Protection', text: 'Ignores the effects listed on its card.' },
-      { name: 'Ethereal Blade', text: 'Ranged and Magic Attacks cannot be used against the Lucanus.' },
+      { name: 'Demonic Protection', text: 'Ignores Stun, Mighty, Immobilize, and Pierce 1–3.' },
+      {
+        name: 'Ethereal Blade',
+        text: 'Helmet and Armor cannot be used against the Lucanus’s attacks (they grant the target no defense).',
+      },
       {
         name: 'Demonic Gaze',
         text: 'Each hero who attacks the Lucanus suffers 1 damage at the end of their attack activity.',
