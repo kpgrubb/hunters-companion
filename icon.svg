@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#241a12"/>
+      <stop offset="100%" stop-color="#0b0908"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <!-- shield -->
+  <path d="M256 84 386 128 V266 C386 350 322 404 256 436 C190 404 126 350 126 266 V128 Z"
+        fill="#17130f" stroke="#3a2e20" stroke-width="10"/>
+  <!-- blood cross / hunter mark -->
+  <path d="M256 150 V370 M186 232 H326" stroke="#8e1b1b" stroke-width="26" stroke-linecap="round"/>
+  <circle cx="256" cy="232" r="30" fill="#0b0908" stroke="#b7902e" stroke-width="10"/>
+  <!-- fangs -->
+  <path d="M216 300 l16 40 16 -40 M264 300 l16 40 16 -40" fill="none" stroke="#e8dcc0" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
