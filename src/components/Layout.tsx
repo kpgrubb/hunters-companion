@@ -1,8 +1,9 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import MusicPlayer from './MusicPlayer'
-import { BookIcon, SwordIcon } from './Icons'
+import { BookIcon, SwordIcon, CompassIcon } from './Icons'
 
 const navItems = [
+  { to: '/how-to-play', label: 'How to Play', Icon: CompassIcon },
   { to: '/glossary', label: 'Rules Glossary', Icon: BookIcon },
   { to: '/combat', label: 'Combat & Foes', Icon: SwordIcon },
 ]

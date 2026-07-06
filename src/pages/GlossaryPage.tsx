@@ -1,7 +1,9 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { terms, categoryMeta, categoryOrder, countByCategory } from '../data/glossary'
 import type { GlossaryCategory } from '../types'
 import { SearchIcon, XIcon } from '../components/Icons'
+import AutoGloss from '../components/AutoGloss'
 
 type Filter = 'all' | GlossaryCategory
 
@@ -22,6 +24,21 @@ export default function GlossaryPage() {
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState<Filter>('all')
   const counts = useMemo(countByCategory, [])
+  const [params, setParams] = useSearchParams()
+
+  // Deep link from a tooltip: /glossary?term=<id> focuses that entry.
+  useEffect(() => {
+    const id = params.get('term')
+    if (!id) return
+    const t = terms.find((x) => x.id === id)
+    if (t) {
+      setQuery(t.term)
+      setFilter('all')
+    }
+    params.delete('term')
+    setParams(params, { replace: true })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -107,7 +124,7 @@ export default function GlossaryPage() {
                 </div>
                 {t.definition.split('\n\n').map((p, i) => (
                   <p key={i} className="mt-1.5 text-[15px] leading-relaxed text-parchment-dim first:mt-0">
-                    {highlight(p, query)}
+                    {query ? highlight(p, query) : <AutoGloss text={p} excludeId={t.id} />}
                   </p>
                 ))}
               </article>

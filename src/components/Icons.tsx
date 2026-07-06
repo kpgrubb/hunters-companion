@@ -94,6 +94,12 @@ export const SwordIcon = svg(
     <line x1="8" y1="8" x2="4" y2="4" />
   </>,
 )
+export const CompassIcon = svg(
+  <>
+    <circle cx="12" cy="12" r="9" />
+    <polygon points="16 8 13 13 8 16 11 11 16 8" fill="currentColor" stroke="none" />
+  </>,
+)
 export const MusicIcon = svg(
   <>
     <path d="M9 18V5l12-2v13" />

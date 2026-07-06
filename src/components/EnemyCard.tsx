@@ -1,5 +1,13 @@
 import { useState } from 'react'
 import type { Enemy, AttackType } from '../types'
+import TermTip from './TermTip'
+import AutoGloss from './AutoGloss'
+
+const attackTermId: Record<AttackType, string> = {
+  melee: 'melee-attack-enemy',
+  ranged: 'ranged-attack-enemy',
+  magic: 'magic-attack-enemy',
+}
 
 const attackStyle: Record<AttackType, { label: string; dot: string; text: string }> = {
   melee: { label: 'Melee', dot: 'bg-blood-bright', text: 'text-blood-bright' },
@@ -14,11 +22,13 @@ const groupAccent: Record<Enemy['group'], string> = {
   insectoid: 'border-l-gold',
 }
 
-function Attr({ label, value }: { label: string; value: number | null }) {
+function Attr({ label, value, term }: { label: string; value: number | null; term: string }) {
   if (value == null) return null
   return (
     <div className="flex flex-col items-center rounded bg-black/30 px-2 py-1">
-      <span className="text-[10px] uppercase tracking-wider text-parchment-dim">{label}</span>
+      <TermTip term={term} className="text-[10px] uppercase tracking-wider text-parchment-dim">
+        {label}
+      </TermTip>
       <span className="font-display text-base leading-none text-parchment">{value}</span>
     </div>
   )
@@ -52,15 +62,17 @@ export default function EnemyCard({ enemy }: { enemy: Enemy }) {
           {/* Stats */}
           <div className="mt-3 flex flex-wrap items-stretch gap-1.5">
             <div className="flex flex-col items-center rounded bg-blood/25 px-2 py-1">
-              <span className="text-[10px] uppercase tracking-wider text-parchment-dim">HP</span>
+              <TermTip term="health" className="text-[10px] uppercase tracking-wider text-parchment-dim">
+                HP
+              </TermTip>
               <span className="font-display text-base leading-none text-blood-bright">
                 {s.health}
               </span>
             </div>
-            <Attr label="Per" value={s.perception} />
-            <Attr label="Str" value={s.strength} />
-            <Attr label="Agi" value={s.agility} />
-            <Attr label="Kno" value={s.knowledge} />
+            <Attr label="Per" value={s.perception} term="perception" />
+            <Attr label="Str" value={s.strength} term="strength" />
+            <Attr label="Agi" value={s.agility} term="agility" />
+            <Attr label="Kno" value={s.knowledge} term="knowledge" />
           </div>
 
           {/* Attacks */}
@@ -69,14 +81,22 @@ export default function EnemyCard({ enemy }: { enemy: Enemy }) {
               {enemy.attacks.map((a, i) => {
                 const st = attackStyle[a.type]
                 return (
-                  <div key={i} className="flex items-center gap-2 text-sm">
+                  <div key={i} className="flex flex-wrap items-center gap-x-2 text-sm">
                     <span className={`h-2 w-2 shrink-0 rounded-full ${st.dot}`} />
-                    <span className={`w-16 shrink-0 font-display ${st.text}`}>{st.label}</span>
+                    <TermTip term={attackTermId[a.type]} className={`w-16 shrink-0 font-display ${st.text}`}>
+                      {st.label}
+                    </TermTip>
                     <span className="text-parchment-dim">
-                      Attack <span className="text-parchment">{a.attackValue}</span> ·{' '}
-                      <span className="text-parchment">{a.dice}</span> dice
+                      <TermTip term="attack-value">Attack</TermTip>{' '}
+                      <span className="text-parchment">{a.attackValue}</span> ·{' '}
+                      <span className="text-parchment">{a.dice}</span>{' '}
+                      <TermTip term="attack-dice">dice</TermTip>
                     </span>
-                    {a.note && <span className="text-xs italic text-iron-light">— {a.note}</span>}
+                    {a.note && (
+                      <span className="text-xs italic text-iron-light">
+                        — <AutoGloss text={a.note} />
+                      </span>
+                    )}
                   </div>
                 )
               })}
@@ -110,7 +130,9 @@ export default function EnemyCard({ enemy }: { enemy: Enemy }) {
                       </span>
                     )}
                   </dt>
-                  <dd className="text-sm leading-relaxed text-parchment-dim">{ab.text}</dd>
+                  <dd className="text-sm leading-relaxed text-parchment-dim">
+                    <AutoGloss text={ab.text} />
+                  </dd>
                 </div>
               ))}
             </dl>

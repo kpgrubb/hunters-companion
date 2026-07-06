@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { terms } from '../data/glossary'
 import { enemies } from '../data/enemies'
-import { BookIcon, SwordIcon } from '../components/Icons'
+import { BookIcon, SwordIcon, CompassIcon } from '../components/Icons'
 
 export default function HomePage() {
   return (
@@ -16,6 +16,17 @@ export default function HomePage() {
       </p>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2">
+        <Link
+          to="/how-to-play"
+          className="rune-card group rounded-xl p-6 text-left transition hover:border-gold/50 sm:col-span-2"
+        >
+          <CompassIcon className="text-gold-bright" size={28} />
+          <h2 className="mt-3 font-display text-xl text-parchment">How to Play</h2>
+          <p className="mt-1 text-sm text-parchment-dim">
+            New to the table? A guided walk-through of turns, combat, morale and the campaign — every
+            rules term links to its definition.
+          </p>
+        </Link>
         <Link
           to="/glossary"
           className="rune-card group rounded-xl p-6 text-left transition hover:border-gold/50"

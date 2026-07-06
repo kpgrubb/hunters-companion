@@ -4,6 +4,7 @@ import { terms } from '../data/glossary'
 import { enemies, enemyGroupLabels } from '../data/enemies'
 import type { Enemy } from '../types'
 import EnemyCard from '../components/EnemyCard'
+import AutoGloss from '../components/AutoGloss'
 
 export default function CombatPage() {
   const combatTerms = useMemo(
@@ -41,7 +42,9 @@ export default function CombatPage() {
             {traitTerms.map((t) => (
               <div key={t.id} className="rune-card rounded-lg p-4">
                 <h3 className="font-display text-base text-gold-bright">{t.term}</h3>
-                <p className="mt-1 text-sm leading-relaxed text-parchment-dim">{t.definition}</p>
+                <p className="mt-1 text-sm leading-relaxed text-parchment-dim">
+                  <AutoGloss text={t.definition} excludeId={t.id} />
+                </p>
               </div>
             ))}
           </div>
@@ -60,7 +63,7 @@ export default function CombatPage() {
                 <h3 className="font-display text-base text-blood-bright">{t.term}</h3>
                 {t.definition.split('\n\n').map((p, i) => (
                   <p key={i} className="mt-1.5 text-sm leading-relaxed text-parchment-dim first:mt-0">
-                    {p}
+                    <AutoGloss text={p} excludeId={t.id} />
                   </p>
                 ))}
               </div>
