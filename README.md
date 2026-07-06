@@ -1,5 +1,7 @@
 # The Hunters A.D. 1492 — Companion
 
+**Live:** https://kpgrubb.github.io/hunters-companion/ (password-gated)
+
 An unofficial fan companion app for the cooperative campaign board game **The Hunters A.D. 1492**.
 
 - 🔎 **Searchable rules glossary** — all 103 terms from the Rules Compendium, filterable by category (combat, traits, actions, equipment, terrain, general).
