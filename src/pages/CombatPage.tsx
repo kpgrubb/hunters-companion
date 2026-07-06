@@ -74,9 +74,9 @@ export default function CombatPage() {
         <SectionHeading>Bestiary</SectionHeading>
         <p className="mb-4 rounded-md border border-border-rune bg-panel/60 px-4 py-2.5 text-xs italic leading-relaxed text-parchment-dim">
           All {enemies.length} enemy cards, transcribed from the physical cards. Attack values are the
-          “Attack x” to-hit target (each die ≤ x is a hit) plus the number of dice. Attribute icons
-          for Perception and Knowledge are certain; Strength/Agility labels are our best reading. Tap
-          a card to see its special abilities.
+          “Attack x” to-hit target (each die ≤ x is a hit) plus the number of dice. Attributes read
+          left→right as Perception · Strength · Agility · Knowledge. Tap a card to see its special
+          abilities.
         </p>
         <div className="space-y-6">
           {groups.map(({ group, list }) => (

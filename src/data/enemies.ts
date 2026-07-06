@@ -4,10 +4,9 @@ import type { Enemy } from '../types'
  * Enemy data transcribed from photographs of the 27 physical enemy cards.
  *
  * Card anatomy (deciphered against the Rules Compendium):
- *  - Stat row: Health (heart) then four attributes, left→right:
- *      eye = PERCEPTION, leaf = STRENGTH, arrow = AGILITY, spiral = KNOWLEDGE.
- *      (Perception & Knowledge are certain; the Strength/Agility labels — leaf vs
- *       arrow — are our best reading and could be swapped.)
+ *  - Stat row: Health (heart) then four attributes, left→right (confirmed against
+ *    close-up photos): eye = PERCEPTION, sword = STRENGTH, arrow = AGILITY,
+ *    scepter = KNOWLEDGE.
  *  - `ref` = the Enemy Action Card range printed under the name (e.g. "A18-20").
  *  - Attacks (bottom colour bar): red = melee, blue = ranged, purple = magic.
  *      `attackValue` = the "Attack x" to-hit target (each die ≤ x is a hit; lower
@@ -329,7 +328,7 @@ export const enemies: Enemy[] = [
       { name: 'Demonic Protection', text: 'Ignores the status effects listed on its card.' },
       {
         name: 'Aura of Fear',
-        text: 'The Wraith’s defense is lowered by the attacking hero’s Perception.',
+        text: 'The Wraith’s melee, ranged and magic defense are each lowered by the attacking hero’s Perception value.',
       },
       { name: 'Immaterial', text: 'Ignores difficult terrain.' },
     ],
